@@ -1,7 +1,9 @@
-package br.com.db1.db1start;
+package br.com.bd1.db1start;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import br.com.db1.db1start.Calculadora;
 
 public class CalculadoraTest {
 	
@@ -10,8 +12,6 @@ public class CalculadoraTest {
 		Calculadora	calculadora = new Calculadora();
 		int resultado = calculadora.soma(4, 2);
 		Assert.assertEquals(6, resultado);
-		
-		System.out.println("soma: " + resultado);
 	}
 	
 	@Test
@@ -19,8 +19,6 @@ public class CalculadoraTest {
 		Calculadora	calculadora = new Calculadora();
 		int resultado = calculadora.subtrai(4, 2);
 		Assert.assertEquals(2, resultado);
-		
-		System.out.println("subtração: " + resultado);
 	}
 	
 	@Test
@@ -28,8 +26,6 @@ public class CalculadoraTest {
 		Calculadora	calculadora = new Calculadora();
 		int resultado = calculadora.multiplica(4, 2);
 		Assert.assertEquals(8, resultado);
-		
-		System.out.println("multiplicação: " + resultado);
 	}
 	
 	@Test
@@ -37,6 +33,30 @@ public class CalculadoraTest {
 		Calculadora	calculadora = new Calculadora();
 		int resultado = calculadora.divide(4, 2);
 		Assert.assertEquals(2,resultado);
-		System.out.println("Divisão: " + resultado);
 	}
+	
+	@Test
+	public void deveVerificarPar() {
+		Calculadora	calculadora = new Calculadora();
+		boolean resultado = calculadora.verificaPar(4);
+		Assert.assertEquals(true,resultado);
+	}
+	
+	@Test
+	public void deveRetornarMaior() {
+		Calculadora	calculadora = new Calculadora();
+		int resultado = calculadora.numeroMaior(4, 6);
+		Assert.assertEquals(6,resultado);
+	}
+	
+	@Test
+	public void deveRetornarImparesAteCem() {
+		Calculadora	calculadora = new Calculadora();
+		int resultado = calculadora.imparesAteCem(1);
+		Assert.assertEquals(5, resultado);
+	}
+	
+	
+	
+	
 }	

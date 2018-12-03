@@ -1,9 +1,10 @@
 package br.com.bd1.db1start;
 
+
+import org.junit.Assert;
 import org.junit.Test;
 
 import br.com.db1.db1start.Nome;
-import junit.framework.Assert;
 
 public class NomeTest {
 
