@@ -17,5 +17,14 @@ public class OperadorMatematico {
 		}
 		return terceiroNumero;
 	}
-
+	
+	public double mediaEntreTresNumeros(double numeroUm, double numeroDois, double numeroTres) {
+		double media =(numeroUm + numeroDois + numeroTres)/3;
+		return media;
+	}
+	
+	public double areaDoTrinagulo(double base, double altura) {
+		double area = base * altura;
+		return area;
+	}
 }
