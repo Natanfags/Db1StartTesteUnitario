@@ -52,8 +52,8 @@ public class CalculadoraTest {
 	@Test
 	public void deveRetornarImparesAteCem() {
 		Calculadora calculadora = new Calculadora();
-		int resultado = calculadora.imparesAteCem(50);
-		Assert.assertEquals(50, resultado);
+		int resultado = calculadora.imparesAteCem(95);
+		Assert.assertEquals(3, resultado);
 	}
 
 }

@@ -35,11 +35,14 @@ public class Calculadora {
 		}
 	}
 
+	int cont = 0;
 	public int imparesAteCem(int numero) {
-		for (int i = 0; i < 100; i++) {
-			if (i % 2 == 1) {
-			}
+		for (numero = 0; numero < 100; numero++) {
+			if (numero % 2 != 0) {
+				cont=+ numero;
+				}
 		}
+		
 		return numero;
 	}
 }
